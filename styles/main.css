@@ -14,21 +14,15 @@ body {
   display: flex;
   width: 50%;
   min-height: 650px;
-  border: 2px solid red;
+  border: 2px solid darkslategray;
   flex-direction: column;
 }
 
 .row {
   display: flex;
   flex: 1;
-  border: 2px solid red;
 }
 
 .column {
   flex: 1;
-  border: 2px solid blue;
 }
-
-/* div {
-  border: 2px solid red;
-} */

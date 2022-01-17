@@ -6,8 +6,11 @@ body {
   margin: 20px;
 }
 
+.box {
+  flex: 1;
+}
+
 .colored {
-  background-color: darkslategrey;
 }
 
 .grid-container {

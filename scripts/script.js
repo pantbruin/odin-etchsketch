@@ -7,7 +7,7 @@ function createGrid(sideLength) {
         row.classList.add('row');
         for (let j = 0; j < sideLength; j++){
             let column = document.createElement('div');
-            column.classList.add('column');
+            column.classList.add('box');
             row.appendChild(column);
         };
         gridContainer.appendChild(row);
@@ -16,8 +16,19 @@ function createGrid(sideLength) {
 
 function colorSquare(event) {
     const box = event.target
-    if (!box.classList.contains('column')) return
-    box.classList.add('colored')
+    if (!box.classList.contains('box')) return
+    
+    // Check if the box has a background-color property
+    if (box.style.backgroundColor){
+        box.style.filter = `brightness(0.15)`;
+    } else {
+        box.style.backgroundColor = getRandomHexColor();
+    };
+};
+
+function getRandomHexColor() {
+    let randomColorHex = Math.floor(Math.random()*16777215).toString(16);
+    return `#${randomColorHex}`
 }
 
 function resetGrid(){

@@ -6,6 +6,10 @@ body {
   margin: 20px;
 }
 
+.colored {
+  background-color: darkslategrey;
+}
+
 .grid-container {
   display: flex;
   width: 50%;

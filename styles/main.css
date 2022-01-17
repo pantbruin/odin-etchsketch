@@ -1,14 +1,28 @@
-.grid-container {
+body {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 100px;
+  margin: 20px;
+}
+
+.grid-container {
+  display: flex;
   width: 50%;
-  height: 50%;
+  min-height: 650px;
+  border: 2px solid red;
+  flex-direction: column;
 }
 
 .row {
+  display: flex;
   flex: 1;
   border: 2px solid red;
+}
+
+.column {
+  flex: 1;
+  border: 2px solid blue;
 }
 
 /* div {
